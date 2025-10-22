@@ -11,6 +11,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-
+        
+      - name: Make script executable
+        run: chmod +x hello.sh
+        
       - name: Run hello.sh
         run: ./hello.sh
